@@ -17,7 +17,7 @@ class CronListener extends \System
             $tstamp = time();
             $interval = $tstamp - $lastImport;
             if( ($interval >= $cron && $cron != "no_cronjob") || ($lastImport == "" && $cron != "no_cronjob") ) {
-                echo "Cron ausgeführt<br>";
+                //echo "Cron ausgeführt<br>";
 
                 $appId = $obj->pdir_sf_fb_app_id;
                 $appSecret = $obj->pdir_sf_fb_app_secret;
